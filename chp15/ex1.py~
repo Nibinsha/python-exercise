@@ -1,0 +1,20 @@
+class Point:
+      def d(x):
+          print "(%r,%r)"%(x.a,x.y)
+class Rect:
+      def s(w):
+          x = Point()
+          x.a = w.c.x 
+          x.y = w.c.y
+          return x
+s = Point()
+s.a = 12
+s.y = 21
+s.d()
+
+r = Rect()
+r.c = Point()
+r.c.x = 23
+r.c.y = 44
+Point(r)
+
